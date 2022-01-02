@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet"href="style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png">
+            <h2>Drive</h2>
+        </div>
+        <div class="search">
+            <button id="li">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+            <input type="text"placeholder="Search in Drive">
+            <div class="tune">
+                
+            <span class="material-icons">
+                tune
+                </span>
+            
+            </div>  
+        </div>
+        <div class="icons">
+            <div class="icon-1">
+                <button id="li">
+                <span class="material-icons">
+                    help_outline
+                    </span>
+                </button>
+                <button id="li">
+                    <span class="material-icons">
+                        settings
+                        </span>
+                    </button>
+            </div>
+            <div class="icon-2">
+                <button id="li">
+                <span class="material-icons">
+                    apps
+                    </span>
+                </button>
+                    <img src="mail.webp">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="buttons">
+            <button class="btn">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <h3>New</h3>
+            </button>
+            <button class="btn">
+                <span class="material-icons">
+                    add_to_drive
+                    </span>
+                <h4>My Drive</h4>
+            </button>
+            <button class="btn">
+                <span class="material-icons">
+                    phonelink
+                    </span>
+                    <h4>Computers</h4>
+            </button>
+            <button class="btn">
+                <span class="material-icons">
+                    people_alt
+                    </span>
+                    <h4>Shared with me</h4>
+            </button>
+            <button class="btn">
+                <span class="material-icons">
+                    watch_later
+                    </span>
+                    <h4>Recent</h4>
+            </button>
+            <button class="btn">
+                <span class="material-icons">
+                    star_outline
+                    </span>
+                <h4>Starred</h4>
+
+            </button>
+            <button class="btn">
+                <span class="material-icons">
+                    delete_outline
+                    </span>
+                <h4>Trash</h4>
+
+            </button>
+           </div><hr>
+
+           <div class="menu-bottom">
+            <span class="material-icons">
+                cloud
+                </span>
+               <h4>Storage</h4>
+           </div>
+           
+           <div class="progress-bar">
+               <progress value="60"max="500"></progress>
+               <h5>1.45 GB of 15 GB used</h5>
+           
+                <button class="btn">Buy Storage</button>
+            </div>
+        </div>
+        
+        <div class="my-drive">
+            <div class="drive-menu">
+            <select>
+                    <option>New Folder</option>
+                    <option>Upload Files</option>
+                    <option>Upload Folder</option>
+                    <option>Google Docs</option>
+                    <option>Google Sheets</option>
+                    <option>Google Slides</option>
+                    <option>Google Forms</option>
+                    <option>More</option>
+            </select>
+        </div>
+        <div class="list-view">
+            <button id="li"onclick="fn()">
+            <span class="material-icons">
+                view_list
+                </span>
+            </button>
+            <button id="li">
+             <span class="material-icons">
+                info
+                </span>
+            </button>
+        </div>
+        
+
+    </div>
+    <div class="content">
+        <h4 style="color:grey">Suggested</h4>
+        <div class="content-img">
+        <img src="file1.png">
+        <img src="file2.jpg">
+        <img src="file4.jpg">
+        <img src="file5.webp">
+        </div>
+    </div>
+</div>
+    <section>
+    <div class="List" id="List">
+        <table >
+            <tr id="head-table" >
+            <th>Name</th>
+            <th>Owner</th>
+            <th>Last Modified</th>
+            <th>File Size</th>
+           </tr>
+           <tr id="row"></tr>
+           <tr id="ro">
+               <td>Tamilselvi.docx</td>
+               <td id='me'>Me</td>
+               <td id='me'>Nov 28,2016 me</td>
+               <td id='me'>20MB</td>
+           </tr>
+           <tr id="ro1">
+            <td>Tamilselvi.pdf</td>
+            <td id='me'>Me</td>
+            <td id='me'>oct 28,2017 me</td>
+            <td id='me'>15MB</td>
+        </tr>
+        <tr id="ro2">
+            <td>Getting Started</td>
+            <td id='me'>Me</td>
+            <td id='me'>Nov 29,2019 me</td>
+            <td id='me'>100MB</td>
+        </tr>
+        <tr id="ro3">
+            <td>Google Form</td>
+            <td id='me'>Me</td>
+            <td id='me'>Nov 29,2019 me</td>
+            <td id='me'>1.5MB</td>
+        </tr>
+        </table>
+    </div>
+    <!-- <div class="Grid" id="Grid">
+        <div class="column"><img src="logo.png"> </div>
+        <div class="column"><img src="logo.png"> </div>
+        <div class="column"><img src="logo.png"> </div>
+        <div class="column"><img src="logo.png"> </div>
+    </div>  -->
+ </section>
+    
+    <script src="google.js"></script>
+</body>
+</html>
